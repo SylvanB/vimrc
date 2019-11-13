@@ -51,6 +51,18 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
 
+" --- My Additions ---
+
+" Enable Line numbers
+set number
+set numberwidth=3
+
+" Set rust completion using racer
+" set hidden
+" let g:racer_cmd = "/home/sylvan/.cargo/bin/racer"
+" let g:racer_experimental_completer = 1
+
+:imap jj <Esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
